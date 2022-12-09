@@ -24,7 +24,7 @@ null_ls.setup {
     diagnostics.pylint, -- python linter
     diagnostics.flake8, -- python linter
     diagnostics.golangci_lint, -- go linter
-    diagnostics.codespell, -- grammer checker
+    diagnostics.codespell, -- grammar checker
   },
   -- configure format on save
   on_attach = function(current_client, bufnr)

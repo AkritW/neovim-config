@@ -86,7 +86,14 @@ return packer.startup(function(use)
 
   use { "andweeb/presence.nvim" }
 
+  -- theme
   use "navarasu/onedark.nvim"
+
+  -- markdown
+  use {
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  }
 
   if packer_bootstrap then require("packer").sync() end
 end)
